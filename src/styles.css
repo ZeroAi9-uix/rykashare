@@ -452,23 +452,7 @@ button {
     line-height: 1.4
 }
 
-.radio-check {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    display: grid;
-    place-items: center;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #484458;
-    border-radius: 50%;
-    color: #09090f
-}
 
-.selected .radio-check {
-    background: #9cf4db;
-    border-color: #9cf4db
-}
 
 .builder {
     margin-top: 22px;

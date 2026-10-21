@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import {
   ArrowUpRight, Check, Copy, Disc3, Headphones, Link2, ListMusic,
-  Music2, Radio, Share2, Sparkles, Users, Youtube, Play
+  Music2, Share2, Sparkles, Users, Youtube, Play
 } from 'lucide-react'
 
 type Kind = 'watch' | 'playlist' | 'album' | 'channel' | 'room'
@@ -141,7 +141,6 @@ export default function App() {
             return <button key={item.id} className={`type-card ${kind === item.id ? 'selected' : ''}`} onClick={() => chooseKind(item.id)}>
               <span className="type-icon"><Icon size={21} /></span>
               <span className="type-text"><strong>{item.label}</strong><small>{item.description}</small></span>
-              <span className="radio-check">{kind === item.id && <Check size={13} />}</span>
             </button>
           })}
         </div>
